@@ -1,0 +1,88 @@
+.footer_container{
+    background-color: #14213D;
+    color: #ffffff;
+    font-family: inherit;
+}
+
+.footer_content{
+    width: 1540px;
+    margin: auto;
+}
+
+.footer_navigation_container{
+    display: flex;
+    width: 100%;
+    padding: 40px 0px;
+}
+
+.additional , .instructor{
+    min-width:160px;
+    margin-right: 48px;
+}
+
+.contact{
+    min-width:260px;
+    margin-right: 48px;
+}
+
+.link_container{
+    display: block;
+    margin-top: 12px;
+}
+
+.additional a , .instructor a{
+    text-align: left;
+    font-family: inherit;
+    font-size: 14px;
+    color: #cecece;
+}
+
+.email{
+    margin-top: 12px;
+    color: #FCA311;
+    text-align: left;
+    font-size: 14px;
+}
+
+.email a{
+    color: #cecece;
+    font-size: 14px;
+}
+
+.additional a:hover , .instructor a:hover , .email a:hover{
+    text-decoration: none;
+}
+
+.tag{
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-bottom: 1px #FCA311 solid;
+    text-align: left;
+}
+.HU_logo_container{
+    display: block;
+    min-height: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+}
+
+.HU{
+    width: 78px;
+    height: 78px;
+    float: right;
+}
+
+.credits_container{
+    border-top: 1px #ffffff solid;
+}
+
+.credits{
+    display: block;
+    text-align: right;
+    padding: 14px 0px;
+    font-family: inherit;
+    font-size: 12px;
+}

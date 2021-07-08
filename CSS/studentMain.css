@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.main_view{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content_container_outer{
+    background-color: #ffffff;
+    padding: 60px;
+    flex: 1;
+}
+
+.content_container_inner{
+    width: 1540px;
+    margin: auto;
+    display: flex;
+}
+
+.content_navigator_container{
+    position: sticky;
+    top: 45px;
+    width: 270px;
+    height: 360px;
+    box-shadow: 0px 8px 25px rgb(0, 0, 0 , 0.3);
+}
+
+.content_navigation_header{
+    color: #14213D;
+    font-size: 26px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 12px 36px;
+    text-align: left;
+}
+
+
+.content_navigator_container button{
+    display: block;
+    width: 100%;
+    padding: 12px 36px;
+    background-color: transparent;
+    border: none;
+    background-color: #f7f7f7;
+    color: #535353;
+    font-family: inherit;
+    font-size: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.content_navigator_container button:hover{
+    color: #000000;
+    background-color: #e7e7e7;
+    padding: 12px 12px;
+}
+
+.content_container{
+    width: 1360px;
+}
+
+.available_exams_container{
+    width: 900px;
+    margin: auto;
+}
+
+.exams_overview_header , .search_header , .to_do_list_header{
+    padding: 12px 0px;
+    margin-bottom: 24px;
+}
+
+.exams_overview_text , .search_text ,.to_do_list_text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+}
+
+.exam{
+    box-shadow: 0px 0px 25px rgb(0, 0, 0 , 0.2);
+    margin-bottom:45px;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.exam_upper{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FCA311;
+    padding: 14px;
+    border-radius: 12px 12px 0px 0px;
+    width: 100%;
+}
+
+.select_form{
+    width: 95%;  
+}
+
+.exam_input{
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.more_options_button , .more_options_button_searched{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+}
+
+.more_options_image{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 1;
+}
+
+.more_options_list_container,.more_options_list_container_searched{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    top: 100%;
+    right: 0px;
+    width: 175px;
+    box-shadow:  0px 0px 20px rgb(0, 0, 0 , 0.3);
+    z-index: 2;
+}
+
+.todo_button{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    display: block;
+    padding: 12px;
+    color: #535353;
+    text-decoration: none;
+    text-align: left;
+    font-family: inherit;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.todo_button:hover{
+    color: #000000;
+}
+
+.exam_lower{
+    padding: 4px 14px;
+}
+
+.created_by , .ratio_span{
+    display: block;
+    margin : 12px 0px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #535353;
+}
+
+.search_exams_container{
+    display: none;
+    width: 900px;
+    margin: auto;
+}
+
+.search_input_container{
+    position: relative;
+    width: 100%;
+    border: 1px #FCA311 solid;
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.search_input{
+    width: 90%;
+    font-size: 24px;
+    padding: 12px;
+    border: none;
+}
+
+.search_input::placeholder{
+    color: #d4d4d4;
+}
+
+.input_search_image{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
+    right: 16px;
+}
+
+.search_something_container{
+    text-align: center;
+}
+
+.search_something{
+    color: #d4d4d4;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.to_do_list_container{
+    display: none;
+    width: 900px;
+    margin: auto;
+}
+
+.to_do_list_not_empty{
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 25px rgb(0, 0, 0 , 0.2);
+}
+
+.exam_in_to_do{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    width: 100%;
+    border-bottom: 1px #f7f7f7 solid;
+}
+
+.exam_input_to_do{
+    font-size: 24px;
+    font-family: inherit;
+    background-color: transparent;
+    border: none;
+    width: 95%;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.to_do_numbering{
+    color: #acacac;
+    margin-right: 12px;
+    font-size: inherit;
+}
+
+.to_do_list_is_empty{
+    text-align: center;
+}
+
+.empty_list_text{
+    color: #d4d4d4;
+    font-size: inherit;
+    font-family: inherit;
+}

@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.main_view{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+.header_log_in_upper_content{
+    position: relative;
+    background-image: linear-gradient(to bottom , #FCA311 80%, #ffffff);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1540px;
+    margin: auto;
+    font-family: inherit;
+}
+
+.logo_container{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.logo_text{
+    font-family: inherit;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo_text:focus:not(:link:active){
+    outline: 1px dotted #000000;
+}
+
+.sign_up_anchor{
+    display: inline-block;
+    background-color: #14213D;
+    padding: 7px 21px;
+    border-radius: 8px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+.sign_up_anchor:focus:not(:link:active){
+    outline: 1px dotted #000000;
+}
+
+.log_in_welcoming_view_container{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1540px;
+    margin:auto;
+    padding: 60px 0px;
+}
+
+.log_in_container{
+    min-width: 420px;
+    font-size: 21px;
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.log_in_text{
+    display: block;
+    width: 100%;
+    font-size: 32px;
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.log_in_form_container .log_in_form label{
+    display: block;
+    width: 100%;
+    margin: 24px 0px;
+}
+
+.username_header_text,.password_header_text{
+    display: block;
+    padding: 14px 0px;
+    font-family: inherit;
+    font-size: 18px;
+}
+
+.username_input,.password_input{
+    display: block;
+    font-size: inherit;
+    width: 100%;
+    padding: 6px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px #14213D solid;
+    font-family: inherit;
+}
+
+.submit_button_container{
+    margin-top: 60px;
+    display: block;
+}
+
+.submit_button{
+    width: 100%;
+    padding: 8px;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #14213D;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.submit_button:focus:not(:link:active){
+    outline: 1px dotted #000000;
+}
+
+.sign_up_question_container{
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.sign_up_here a{
+    color: #000000;
+}
+
+.sign_up_here a:hover{
+    text-decoration: none;
+}
+
+.sign_up_here a:focus:not(:link:active){
+    outline: 1px dotted #000000;
+}
+
+.welcome_text_container{
+    margin-right:90px;
+    color: #ffffff;
+}
+
+.test_yourself{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 112px;
+    color: #ffffff;
+}
+
+.find_your_path{
+    font-family: inherit;
+    font-size: 48px;
+    color: #ffffff;
+}
+
+.find_your_path span{
+    text-decoration: underline;
+}
+
+.student_features_container{
+    width: 100%;
+    padding: 60px 0px;
+}
+
+.features_container_outer{
+    width: 1540px;
+    margin: auto;
+}
+
+.features_container_inner{
+width: 100%;
+}
+
+.feature_number_and_context_container a{
+    display: inline-flex;
+    align-items: center;
+    margin: 30px 0px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.feature_number_container_outer{
+    display: block;
+    position: relative;
+    background-color: #aaaaaa;
+    margin-right: 32px;
+    width: 78px;
+    height: 78px;
+    border-radius: 100px;
+    transition: 0.2s ease-in-out;
+}
+
+.feature_number_container_inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 74px;
+    height: 74px;
+    background-color: #ffffff;
+    border-radius: 100px;
+}
+
+.number{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #aaaaaa;
+    font-family: inherit;
+    font-size: 48px;
+    transition: 0.2s ease-in-out;
+}
+
+.feature{
+    display: block;
+    font-family: inherit;
+    font-size: 36px;
+    color: #aaaaaa;
+}
+
+.feature_number_and_context_container a:hover .feature_number_container_outer{
+    background-color: #FCA311;
+    margin-right: 64px;
+}
+
+.feature_number_and_context_container a:hover .number{
+    color: #FCA311;
+}
+
+.feature_number_and_context_container a:hover .feature{
+    color: #FCA311;
+}
+
+.features_explanation_container{
+    background-color: #f0f0f0;
+    width: 100%;
+    padding: 60px 0px;
+}
+
+.features_explanation{
+    width: 1540px;
+    margin: auto;
+}
+
+.feature_image_para_container_all{
+    margin: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature_image_para_container{
+    width: 320px;
+    text-align: center;
+    padding: 12px;
+    border-radius: 12px;
+    transition: 0.8s ease-in-out;
+}
+
+.feature_image_container{
+    display: inline;
+    position: relative;
+}
+
+.feature_image{
+    display: block;
+}
+
+.feature_paragrapgh{
+    margin-top: 24px;
+    font-family: inherit;
+    font-size: 17px;
+}
+
+.excel_feature_container{
+    width: 100%;
+    padding: 60px 0px;
+}
+
+.excel_feature_inner{
+    width: 1540px;
+    margin: auto;
+    display: flex;
+}
+
+.excel_logo_container{
+    margin-right: 160px;
+}
+
+.excel_logo{
+    display: block;
+}
+
+.excel_paragraph_header{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 64px;
+    margin-bottom: 26px;
+    color: #107c41;
+}
+
+.excel_paragraph{
+    font-family: inherit;
+    font-size: 26px;
+    margin-bottom: 36px ;
+}
+
+
+.footer_container{
+    background-color: #14213D;
+    color: #ffffff;
+    font-family: inherit;
+}
+
+.footer_content{
+    width: 1540px;
+    margin: auto;
+}
+
+.footer_navigation_container{
+    display: flex;
+    width: 100%;
+    padding: 40px 0px;
+}
+
+.additional , .instructor{
+    min-width:180px;
+    margin-right: 48px;
+}
+
+.contact{
+    min-width:290px;
+    margin-right: 48px;
+}
+
+.link_container{
+    display: block;
+    margin-top: 12px;
+}
+
+.additional a , .instructor a{
+    display: inline;
+    text-align: center;
+    font-family: inherit;
+    font-size: 14px;
+    margin-top: 12px;
+    color: #cecece;
+    text-align: left;
+}
+
+.email{
+    margin-top: 12px;
+    color: #FCA311;
+    text-align: left;
+    font-size: 14px;
+}
+
+.email a{
+    color: #cecece;
+    font-size: 14px;
+}
+
+.additional a:hover , .instructor a:hover , .email a:hover{
+    text-decoration: none;
+}
+
+.tag{
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    text-transform: uppercase;
+    border-bottom: 1px #fca311 solid;
+    text-align: left;
+}
+
+.HU_logo_container{
+    display: block;
+    min-height: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+}
+
+.HU{
+    width: 78px;
+    height: 78px;
+    float: right;
+}
+
+.credits_container{
+    border-top: 1px #ffffff solid;
+}
+
+.credits{
+    display: block;
+    text-align: right;
+    padding: 14px 0px;
+    font-family: inherit;
+    font-size: 12px;
+}

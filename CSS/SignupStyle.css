@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.main_view{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header_container{
+    background-color: #FCA311;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1540px;
+    margin: auto;
+    font-family: inherit;
+}
+
+.logo_container{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.logo_text{
+    font-family: inherit;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo_text:focus:not(:link:active){
+    outline: 1px dotted #000000;
+}
+
+.content_container_outer{
+    position: relative;
+    z-index: 1;
+    background-color: #ffffff;
+    padding: 60px;
+    flex: 1;
+}
+
+.content_container_inner{
+    width: 440px;
+    margin: auto;
+    border-radius: 7px;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0 , 0.3);
+    padding: 16px;
+}
+
+.sign_up_header_container{
+    width: 100%;
+    padding: 12px;
+}
+
+.sign_up_header_text{
+    display: block;
+    width: 100%;
+    font-size: 32px;
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.profile_name,.profile_date,.profile_password{
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 12px 0px;
+}
+
+.profile_info_tag{
+    display: block;
+    font-size: inherit;
+}
+
+.username_input,.password_input{
+    display: block;
+    width: 100%;
+    padding: 6px;
+    border: 1px #000000 solid;
+    border-radius: 8px;
+    margin: 8px 0px;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.birth{
+    display: block;
+    width: 100%;
+    margin: 8px 0px;
+}
+
+.birth .dash_dark{
+    color: #000000;
+}
+
+.birth_day_input_container,.birth_month_input_container,.birth_year_input_container{
+    display: inline;
+    position: relative;
+}
+
+.day_input,.month_input,.year_input{
+    display: inline-block;
+    color: #000000;
+    width: 30%;
+    text-align: center;
+    border: none;
+    border-bottom: 1px #000000 solid;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.days_list_select,.months_list_select,.years_list_select{
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    max-height: 160px;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: #f0f0f0;
+    border: 1px #cccccc solid;
+    z-index: 2;
+}
+
+.list_select::-webkit-scrollbar {
+    display: none;
+  }
+
+.list_select_input_days,.list_select_input_months,.list_select_input_years{
+    display: block;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    margin: 1px 0px;
+    padding: 4px 0px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.list_select_input:hover{
+    background-color: #f3f3f3;
+}
+
+.button_contianer{
+    display: block;
+    padding-top: 24px;
+    width: 100%;
+}
+
+.submit_button{
+    border: none;
+    background-color: #14213D;
+    display: block;
+    padding: 8px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: inherit;
+    color: #ffffff;
+    max-width: 120px;
+    text-align: center;
+    margin-left: auto;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.submit_button:hover{
+    transform: scale(1.05);
+}
+
+.footer_container{
+    background-color: #14213D;
+    color: #ffffff;
+    font-family: inherit;
+}
+
+.footer_content{
+    width: 1540px;
+    margin: auto;
+}
+
+.footer_navigation_container{
+    display: flex;
+    width: 100%;
+    padding: 40px 0px;
+}
+
+.additional , .instructor{
+    min-width:180px;
+    margin-right: 48px;
+}
+
+.contact{
+    min-width:290px;
+    margin-right: 48px;
+}
+
+.link_container{
+    display: block;
+    margin-top: 12px;
+}
+
+.additional a , .instructor a{
+    display: inline;
+    text-align: center;
+    font-family: inherit;
+    font-size: 14px;
+    margin-top: 12px;
+    color: #cecece;
+    text-align: left;
+}
+
+.email{
+    margin-top: 12px;
+    color: #FCA311;
+    text-align: left;
+    font-size: 14px;
+}
+
+.email a{
+    color: #cecece;
+    font-size: 14px;
+}
+
+.additional a:hover , .instructor a:hover , .email a:hover{
+    text-decoration: none;
+}
+
+.tag{
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    text-transform: uppercase;
+    border-bottom: 1px #FCA311 solid;
+    text-align: left;
+}
+
+.HU_logo_container{
+    display: block;
+    min-height: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+}
+
+.HU{
+    width: 78px;
+    height: 78px;
+    float: right;
+}
+
+.credits_container{
+    border-top: 1px #ffffff solid;
+}
+
+.credits{
+    display: block;
+    text-align: right;
+    padding: 14px 0px;
+    font-family: inherit;
+    font-size: 12px;
+}
